@@ -1,0 +1,664 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF1204A216714C8B00609CEF /* TripDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = EF1204A116714C8B00609CEF /* TripDetail.m */; };
+		EF1204B216715B6700609CEF /* Trip.m in Sources */ = {isa = PBXBuildFile; fileRef = EF1204B116715B6700609CEF /* Trip.m */; };
+		EF1204B61671675700609CEF /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = EF1204B51671675700609CEF /* MBProgressHUD.m */; };
+		EF1204C51671804600609CEF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF1204C41671804600609CEF /* MapKit.framework */; };
+		EF1204C91671852500609CEF /* MyLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = EF1204C81671852500609CEF /* MyLocation.m */; };
+		EF1B584816712FE8009F5590 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF1B584716712FE8009F5590 /* UIKit.framework */; };
+		EF1B584A16712FE8009F5590 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF1B584916712FE8009F5590 /* Foundation.framework */; };
+		EF1B584C16712FE8009F5590 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF1B584B16712FE8009F5590 /* CoreGraphics.framework */; };
+		EF1B585216712FE8009F5590 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EF1B585016712FE8009F5590 /* InfoPlist.strings */; };
+		EF1B585416712FE8009F5590 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EF1B585316712FE8009F5590 /* main.m */; };
+		EF1B585816712FE8009F5590 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF1B585716712FE8009F5590 /* AppDelegate.m */; };
+		EF1B585A16712FE8009F5590 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = EF1B585916712FE8009F5590 /* Default.png */; };
+		EF1B585C16712FE8009F5590 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF1B585B16712FE8009F5590 /* Default@2x.png */; };
+		EF1B585E16712FE8009F5590 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF1B585D16712FE8009F5590 /* Default-568h@2x.png */; };
+		EF1B586116712FE8009F5590 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF1B585F16712FE8009F5590 /* MainStoryboard.storyboard */; };
+		EF1B586416712FE8009F5590 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF1B586316712FE8009F5590 /* ViewController.m */; };
+		EF1B5886167130B5009F5590 /* libRestKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EF1B587A16713072009F5590 /* libRestKit.a */; };
+		EF1B588D167130D4009F5590 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF1B5887167130D4009F5590 /* CFNetwork.framework */; };
+		EF1B588E167130D4009F5590 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF1B5888167130D4009F5590 /* CoreData.framework */; };
+		EF1B588F167130D4009F5590 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EF1B5889167130D4009F5590 /* libxml2.dylib */; };
+		EF1B5890167130D4009F5590 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF1B588A167130D4009F5590 /* QuartzCore.framework */; };
+		EF1B5891167130D4009F5590 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF1B588B167130D4009F5590 /* Security.framework */; };
+		EF1B5892167130D4009F5590 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF1B588C167130D4009F5590 /* SystemConfiguration.framework */; };
+		EF1B5894167130ED009F5590 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF1B5893167130ED009F5590 /* MobileCoreServices.framework */; };
+		EF1B58971671336D009F5590 /* ActionsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF1B58961671336D009F5590 /* ActionsTableViewController.m */; };
+		EF1B58D716713DAE009F5590 /* DataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF1B58D216713DAE009F5590 /* DataViewController.m */; };
+		EF1B58D816713DAE009F5590 /* ModelController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF1B58D416713DAE009F5590 /* ModelController.m */; };
+		EF1B58D916713DAE009F5590 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF1B58D616713DAE009F5590 /* RootViewController.m */; };
+		EF56D0F21671AD2C004CBDB6 /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = EF56D0E01671AD2C004CBDB6 /* AFHTTPClient.m */; };
+		EF56D0F31671AD2C004CBDB6 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = EF56D0E21671AD2C004CBDB6 /* AFHTTPRequestOperation.m */; };
+		EF56D0F41671AD2C004CBDB6 /* AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = EF56D0E41671AD2C004CBDB6 /* AFImageRequestOperation.m */; };
+		EF56D0F51671AD2C004CBDB6 /* AFJSONRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = EF56D0E61671AD2C004CBDB6 /* AFJSONRequestOperation.m */; };
+		EF56D0F61671AD2C004CBDB6 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EF56D0E81671AD2C004CBDB6 /* AFNetworkActivityIndicatorManager.m */; };
+		EF56D0F71671AD2C004CBDB6 /* AFPropertyListRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = EF56D0EB1671AD2C004CBDB6 /* AFPropertyListRequestOperation.m */; };
+		EF56D0F81671AD2C004CBDB6 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = EF56D0ED1671AD2C004CBDB6 /* AFURLConnectionOperation.m */; };
+		EF56D0F91671AD2C004CBDB6 /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = EF56D0EF1671AD2C004CBDB6 /* AFXMLRequestOperation.m */; };
+		EF56D0FA1671AD2C004CBDB6 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = EF56D0F11671AD2C004CBDB6 /* UIImageView+AFNetworking.m */; };
+		EF56D10E1671AEBB004CBDB6 /* FGalleryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF56D10D1671AEBB004CBDB6 /* FGalleryViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		EF56D1131671B13A004CBDB6 /* FGalleryPhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF56D1101671B0DF004CBDB6 /* FGalleryPhotoView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		EF56D1141671B13F004CBDB6 /* FGalleryPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = EF56D1121671B0F8004CBDB6 /* FGalleryPhoto.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		EF56D1191671B2A1004CBDB6 /* buttonOrange.png in Resources */ = {isa = PBXBuildFile; fileRef = EF56D1161671B2A1004CBDB6 /* buttonOrange.png */; };
+		EF56D11A1671B2A1004CBDB6 /* buttonOrange@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF56D1171671B2A1004CBDB6 /* buttonOrange@2x.png */; };
+		EF56D11B1671B2A1004CBDB6 /* login_background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF56D1181671B2A1004CBDB6 /* login_background@2x.png */; };
+		EF56D11D1671B36F004CBDB6 /* button_login_no_shadow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF56D11C1671B36F004CBDB6 /* button_login_no_shadow@2x.png */; };
+		EF56D1211671B8D3004CBDB6 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = EF56D1201671B8D3004CBDB6 /* logo.png */; };
+		EF56D1231671B90A004CBDB6 /* logo2.png in Resources */ = {isa = PBXBuildFile; fileRef = EF56D1221671B90A004CBDB6 /* logo2.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EF1B587916713072009F5590 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF1B586E16713072009F5590 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160D1614564E810060A5C5;
+			remoteInfo = RestKit;
+		};
+		EF1B587B16713072009F5590 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF1B586E16713072009F5590 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160D2614564E820060A5C5;
+			remoteInfo = RestKitTests;
+		};
+		EF1B587D16713072009F5590 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF1B586E16713072009F5590 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160E62145651060060A5C5;
+			remoteInfo = RestKitFramework;
+		};
+		EF1B587F16713072009F5590 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF1B586E16713072009F5590 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160E78145651060060A5C5;
+			remoteInfo = RestKitFrameworkTests;
+		};
+		EF1B588116713072009F5590 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF1B586E16713072009F5590 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 259C301615128079003066A2;
+			remoteInfo = RestKitResources;
+		};
+		EF1B5884167130AF009F5590 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF1B586E16713072009F5590 /* RestKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 25160D1514564E810060A5C5;
+			remoteInfo = RestKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EF1204A016714C8B00609CEF /* TripDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TripDetail.h; path = Planning/TripDetail.h; sourceTree = "<group>"; };
+		EF1204A116714C8B00609CEF /* TripDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TripDetail.m; path = Planning/TripDetail.m; sourceTree = "<group>"; };
+		EF1204B016715B6700609CEF /* Trip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Trip.h; path = Planning/Trip.h; sourceTree = "<group>"; };
+		EF1204B116715B6700609CEF /* Trip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Trip.m; path = Planning/Trip.m; sourceTree = "<group>"; };
+		EF1204B41671675700609CEF /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		EF1204B51671675700609CEF /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		EF1204C41671804600609CEF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		EF1204C71671852500609CEF /* MyLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyLocation.h; path = MapKit/MyLocation.h; sourceTree = "<group>"; };
+		EF1204C81671852500609CEF /* MyLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyLocation.m; path = MapKit/MyLocation.m; sourceTree = "<group>"; };
+		EF1B584316712FE8009F5590 /* Insomniie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Insomniie.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF1B584716712FE8009F5590 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EF1B584916712FE8009F5590 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EF1B584B16712FE8009F5590 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EF1B584F16712FE8009F5590 /* Insomniie-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Insomniie-Info.plist"; sourceTree = "<group>"; };
+		EF1B585116712FE8009F5590 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EF1B585316712FE8009F5590 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EF1B585516712FE8009F5590 /* Insomniie-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Insomniie-Prefix.pch"; sourceTree = "<group>"; };
+		EF1B585616712FE8009F5590 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EF1B585716712FE8009F5590 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EF1B585916712FE8009F5590 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		EF1B585B16712FE8009F5590 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		EF1B585D16712FE8009F5590 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		EF1B586016712FE8009F5590 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		EF1B586216712FE8009F5590 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EF1B586316712FE8009F5590 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EF1B586E16713072009F5590 /* RestKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RestKit.xcodeproj; path = RestKit/RestKit.xcodeproj; sourceTree = "<group>"; };
+		EF1B5887167130D4009F5590 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		EF1B5888167130D4009F5590 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		EF1B5889167130D4009F5590 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		EF1B588A167130D4009F5590 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		EF1B588B167130D4009F5590 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		EF1B588C167130D4009F5590 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		EF1B5893167130ED009F5590 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		EF1B58951671336D009F5590 /* ActionsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ActionsTableViewController.h; path = Actions/ActionsTableViewController.h; sourceTree = "<group>"; };
+		EF1B58961671336D009F5590 /* ActionsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ActionsTableViewController.m; path = Actions/ActionsTableViewController.m; sourceTree = "<group>"; };
+		EF1B58D116713DAE009F5590 /* DataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataViewController.h; path = Actions/DataViewController.h; sourceTree = "<group>"; };
+		EF1B58D216713DAE009F5590 /* DataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataViewController.m; path = Actions/DataViewController.m; sourceTree = "<group>"; };
+		EF1B58D316713DAE009F5590 /* ModelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ModelController.h; path = Actions/ModelController.h; sourceTree = "<group>"; };
+		EF1B58D416713DAE009F5590 /* ModelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ModelController.m; path = Actions/ModelController.m; sourceTree = "<group>"; };
+		EF1B58D516713DAE009F5590 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RootViewController.h; path = Actions/RootViewController.h; sourceTree = "<group>"; };
+		EF1B58D616713DAE009F5590 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RootViewController.m; path = Actions/RootViewController.m; sourceTree = "<group>"; };
+		EF56D0AD1671A311004CBDB6 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		EF56D0DF1671AD2C004CBDB6 /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPClient.h; sourceTree = "<group>"; };
+		EF56D0E01671AD2C004CBDB6 /* AFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPClient.m; sourceTree = "<group>"; };
+		EF56D0E11671AD2C004CBDB6 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		EF56D0E21671AD2C004CBDB6 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		EF56D0E31671AD2C004CBDB6 /* AFImageRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFImageRequestOperation.h; sourceTree = "<group>"; };
+		EF56D0E41671AD2C004CBDB6 /* AFImageRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFImageRequestOperation.m; sourceTree = "<group>"; };
+		EF56D0E51671AD2C004CBDB6 /* AFJSONRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFJSONRequestOperation.h; sourceTree = "<group>"; };
+		EF56D0E61671AD2C004CBDB6 /* AFJSONRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFJSONRequestOperation.m; sourceTree = "<group>"; };
+		EF56D0E71671AD2C004CBDB6 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
+		EF56D0E81671AD2C004CBDB6 /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
+		EF56D0E91671AD2C004CBDB6 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		EF56D0EA1671AD2C004CBDB6 /* AFPropertyListRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFPropertyListRequestOperation.h; sourceTree = "<group>"; };
+		EF56D0EB1671AD2C004CBDB6 /* AFPropertyListRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFPropertyListRequestOperation.m; sourceTree = "<group>"; };
+		EF56D0EC1671AD2C004CBDB6 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		EF56D0ED1671AD2C004CBDB6 /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		EF56D0EE1671AD2C004CBDB6 /* AFXMLRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFXMLRequestOperation.h; sourceTree = "<group>"; };
+		EF56D0EF1671AD2C004CBDB6 /* AFXMLRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFXMLRequestOperation.m; sourceTree = "<group>"; };
+		EF56D0F01671AD2C004CBDB6 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		EF56D0F11671AD2C004CBDB6 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		EF56D10C1671AEBB004CBDB6 /* FGalleryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGalleryViewController.h; sourceTree = "<group>"; };
+		EF56D10D1671AEBB004CBDB6 /* FGalleryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGalleryViewController.m; sourceTree = "<group>"; };
+		EF56D10F1671B0DF004CBDB6 /* FGalleryPhotoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FGalleryPhotoView.h; sourceTree = "<group>"; };
+		EF56D1101671B0DF004CBDB6 /* FGalleryPhotoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FGalleryPhotoView.m; sourceTree = "<group>"; };
+		EF56D1111671B0F8004CBDB6 /* FGalleryPhoto.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FGalleryPhoto.h; sourceTree = "<group>"; };
+		EF56D1121671B0F8004CBDB6 /* FGalleryPhoto.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FGalleryPhoto.m; sourceTree = "<group>"; };
+		EF56D1161671B2A1004CBDB6 /* buttonOrange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonOrange.png; sourceTree = "<group>"; };
+		EF56D1171671B2A1004CBDB6 /* buttonOrange@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "buttonOrange@2x.png"; sourceTree = "<group>"; };
+		EF56D1181671B2A1004CBDB6 /* login_background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login_background@2x.png"; sourceTree = "<group>"; };
+		EF56D11C1671B36F004CBDB6 /* button_login_no_shadow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_login_no_shadow@2x.png"; sourceTree = "<group>"; };
+		EF56D11E1671B3AA004CBDB6 /* ButtonWithShadow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ButtonWithShadow.h; sourceTree = "<group>"; };
+		EF56D11F1671B3AA004CBDB6 /* ButtonWithShadow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ButtonWithShadow.m; sourceTree = "<group>"; };
+		EF56D1201671B8D3004CBDB6 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		EF56D1221671B90A004CBDB6 /* logo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo2.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF1B584016712FE8009F5590 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF1204C51671804600609CEF /* MapKit.framework in Frameworks */,
+				EF1B5894167130ED009F5590 /* MobileCoreServices.framework in Frameworks */,
+				EF1B588D167130D4009F5590 /* CFNetwork.framework in Frameworks */,
+				EF1B588E167130D4009F5590 /* CoreData.framework in Frameworks */,
+				EF1B588F167130D4009F5590 /* libxml2.dylib in Frameworks */,
+				EF1B5890167130D4009F5590 /* QuartzCore.framework in Frameworks */,
+				EF1B5891167130D4009F5590 /* Security.framework in Frameworks */,
+				EF1B5892167130D4009F5590 /* SystemConfiguration.framework in Frameworks */,
+				EF1B5886167130B5009F5590 /* libRestKit.a in Frameworks */,
+				EF1B584816712FE8009F5590 /* UIKit.framework in Frameworks */,
+				EF1B584A16712FE8009F5590 /* Foundation.framework in Frameworks */,
+				EF1B584C16712FE8009F5590 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EF12049F16714C4000609CEF /* Planning */ = {
+			isa = PBXGroup;
+			children = (
+				EF1204A016714C8B00609CEF /* TripDetail.h */,
+				EF1204A116714C8B00609CEF /* TripDetail.m */,
+				EF1204B016715B6700609CEF /* Trip.h */,
+				EF1204B116715B6700609CEF /* Trip.m */,
+			);
+			name = Planning;
+			sourceTree = "<group>";
+		};
+		EF1204B31671675700609CEF /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				EF1204B41671675700609CEF /* MBProgressHUD.h */,
+				EF1204B51671675700609CEF /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		EF1204C6167183CE00609CEF /* MapKit */ = {
+			isa = PBXGroup;
+			children = (
+				EF1204C71671852500609CEF /* MyLocation.h */,
+				EF1204C81671852500609CEF /* MyLocation.m */,
+			);
+			name = MapKit;
+			sourceTree = "<group>";
+		};
+		EF1B583816712FE8009F5590 = {
+			isa = PBXGroup;
+			children = (
+				EF56D1221671B90A004CBDB6 /* logo2.png */,
+				EF56D1201671B8D3004CBDB6 /* logo.png */,
+				EF56D0AD1671A311004CBDB6 /* ImageIO.framework */,
+				EF1B586E16713072009F5590 /* RestKit.xcodeproj */,
+				EF1204C41671804600609CEF /* MapKit.framework */,
+				EF1B5893167130ED009F5590 /* MobileCoreServices.framework */,
+				EF1B5887167130D4009F5590 /* CFNetwork.framework */,
+				EF1B5888167130D4009F5590 /* CoreData.framework */,
+				EF1B5889167130D4009F5590 /* libxml2.dylib */,
+				EF1B588A167130D4009F5590 /* QuartzCore.framework */,
+				EF1B588B167130D4009F5590 /* Security.framework */,
+				EF1B588C167130D4009F5590 /* SystemConfiguration.framework */,
+				EF1B584D16712FE8009F5590 /* Insomniie */,
+				EF1B584616712FE8009F5590 /* Frameworks */,
+				EF1B584416712FE8009F5590 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EF1B584416712FE8009F5590 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF1B584316712FE8009F5590 /* Insomniie.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF1B584616712FE8009F5590 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EF1B584716712FE8009F5590 /* UIKit.framework */,
+				EF1B584916712FE8009F5590 /* Foundation.framework */,
+				EF1B584B16712FE8009F5590 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF1B584D16712FE8009F5590 /* Insomniie */ = {
+			isa = PBXGroup;
+			children = (
+				EF56D1151671B2A1004CBDB6 /* Designs */,
+				EF1B58981671338F009F5590 /* Actions */,
+				EF56D0DE1671AD2C004CBDB6 /* AFNetworking */,
+				EF1B585616712FE8009F5590 /* AppDelegate.h */,
+				EF1B585716712FE8009F5590 /* AppDelegate.m */,
+				EF56D10B1671AEBB004CBDB6 /* FGallery */,
+				EF1B585F16712FE8009F5590 /* MainStoryboard.storyboard */,
+				EF1204C6167183CE00609CEF /* MapKit */,
+				EF1204B31671675700609CEF /* MBProgressHUD */,
+				EF12049F16714C4000609CEF /* Planning */,
+				EF1B584E16712FE8009F5590 /* Supporting Files */,
+				EF1B586216712FE8009F5590 /* ViewController.h */,
+				EF1B586316712FE8009F5590 /* ViewController.m */,
+			);
+			path = Insomniie;
+			sourceTree = "<group>";
+		};
+		EF1B584E16712FE8009F5590 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EF1B584F16712FE8009F5590 /* Insomniie-Info.plist */,
+				EF1B585016712FE8009F5590 /* InfoPlist.strings */,
+				EF1B585316712FE8009F5590 /* main.m */,
+				EF1B585516712FE8009F5590 /* Insomniie-Prefix.pch */,
+				EF1B585916712FE8009F5590 /* Default.png */,
+				EF1B585B16712FE8009F5590 /* Default@2x.png */,
+				EF1B585D16712FE8009F5590 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EF1B586F16713072009F5590 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF1B587A16713072009F5590 /* libRestKit.a */,
+				EF1B587C16713072009F5590 /* RestKitTests.octest */,
+				EF1B587E16713072009F5590 /* RestKit.framework */,
+				EF1B588016713072009F5590 /* RestKitFrameworkTests.octest */,
+				EF1B588216713072009F5590 /* RestKitResources.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF1B58981671338F009F5590 /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				EF1B58951671336D009F5590 /* ActionsTableViewController.h */,
+				EF1B58961671336D009F5590 /* ActionsTableViewController.m */,
+				EF1B58D116713DAE009F5590 /* DataViewController.h */,
+				EF1B58D216713DAE009F5590 /* DataViewController.m */,
+				EF1B58D316713DAE009F5590 /* ModelController.h */,
+				EF1B58D416713DAE009F5590 /* ModelController.m */,
+				EF1B58D516713DAE009F5590 /* RootViewController.h */,
+				EF1B58D616713DAE009F5590 /* RootViewController.m */,
+			);
+			name = Actions;
+			sourceTree = "<group>";
+		};
+		EF56D0DE1671AD2C004CBDB6 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				EF56D0DF1671AD2C004CBDB6 /* AFHTTPClient.h */,
+				EF56D0E01671AD2C004CBDB6 /* AFHTTPClient.m */,
+				EF56D0E11671AD2C004CBDB6 /* AFHTTPRequestOperation.h */,
+				EF56D0E21671AD2C004CBDB6 /* AFHTTPRequestOperation.m */,
+				EF56D0E31671AD2C004CBDB6 /* AFImageRequestOperation.h */,
+				EF56D0E41671AD2C004CBDB6 /* AFImageRequestOperation.m */,
+				EF56D0E51671AD2C004CBDB6 /* AFJSONRequestOperation.h */,
+				EF56D0E61671AD2C004CBDB6 /* AFJSONRequestOperation.m */,
+				EF56D0E71671AD2C004CBDB6 /* AFNetworkActivityIndicatorManager.h */,
+				EF56D0E81671AD2C004CBDB6 /* AFNetworkActivityIndicatorManager.m */,
+				EF56D0E91671AD2C004CBDB6 /* AFNetworking.h */,
+				EF56D0EA1671AD2C004CBDB6 /* AFPropertyListRequestOperation.h */,
+				EF56D0EB1671AD2C004CBDB6 /* AFPropertyListRequestOperation.m */,
+				EF56D0EC1671AD2C004CBDB6 /* AFURLConnectionOperation.h */,
+				EF56D0ED1671AD2C004CBDB6 /* AFURLConnectionOperation.m */,
+				EF56D0EE1671AD2C004CBDB6 /* AFXMLRequestOperation.h */,
+				EF56D0EF1671AD2C004CBDB6 /* AFXMLRequestOperation.m */,
+				EF56D0F01671AD2C004CBDB6 /* UIImageView+AFNetworking.h */,
+				EF56D0F11671AD2C004CBDB6 /* UIImageView+AFNetworking.m */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		EF56D10B1671AEBB004CBDB6 /* FGallery */ = {
+			isa = PBXGroup;
+			children = (
+				EF56D1111671B0F8004CBDB6 /* FGalleryPhoto.h */,
+				EF56D1121671B0F8004CBDB6 /* FGalleryPhoto.m */,
+				EF56D10F1671B0DF004CBDB6 /* FGalleryPhotoView.h */,
+				EF56D1101671B0DF004CBDB6 /* FGalleryPhotoView.m */,
+				EF56D10C1671AEBB004CBDB6 /* FGalleryViewController.h */,
+				EF56D10D1671AEBB004CBDB6 /* FGalleryViewController.m */,
+			);
+			path = FGallery;
+			sourceTree = "<group>";
+		};
+		EF56D1151671B2A1004CBDB6 /* Designs */ = {
+			isa = PBXGroup;
+			children = (
+				EF56D11E1671B3AA004CBDB6 /* ButtonWithShadow.h */,
+				EF56D11F1671B3AA004CBDB6 /* ButtonWithShadow.m */,
+				EF56D11C1671B36F004CBDB6 /* button_login_no_shadow@2x.png */,
+				EF56D1161671B2A1004CBDB6 /* buttonOrange.png */,
+				EF56D1171671B2A1004CBDB6 /* buttonOrange@2x.png */,
+				EF56D1181671B2A1004CBDB6 /* login_background@2x.png */,
+			);
+			path = Designs;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF1B584216712FE8009F5590 /* Insomniie */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF1B586716712FE8009F5590 /* Build configuration list for PBXNativeTarget "Insomniie" */;
+			buildPhases = (
+				EF1B583F16712FE8009F5590 /* Sources */,
+				EF1B584016712FE8009F5590 /* Frameworks */,
+				EF1B584116712FE8009F5590 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF1B5885167130AF009F5590 /* PBXTargetDependency */,
+			);
+			name = Insomniie;
+			productName = Insomniie;
+			productReference = EF1B584316712FE8009F5590 /* Insomniie.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF1B583A16712FE8009F5590 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Paul-Henri KOECK";
+			};
+			buildConfigurationList = EF1B583D16712FE8009F5590 /* Build configuration list for PBXProject "Insomniie" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = EF1B583816712FE8009F5590;
+			productRefGroup = EF1B584416712FE8009F5590 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = EF1B586F16713072009F5590 /* Products */;
+					ProjectRef = EF1B586E16713072009F5590 /* RestKit.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				EF1B584216712FE8009F5590 /* Insomniie */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		EF1B587A16713072009F5590 /* libRestKit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRestKit.a;
+			remoteRef = EF1B587916713072009F5590 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EF1B587C16713072009F5590 /* RestKitTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RestKitTests.octest;
+			remoteRef = EF1B587B16713072009F5590 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EF1B587E16713072009F5590 /* RestKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RestKit.framework;
+			remoteRef = EF1B587D16713072009F5590 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EF1B588016713072009F5590 /* RestKitFrameworkTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RestKitFrameworkTests.octest;
+			remoteRef = EF1B587F16713072009F5590 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EF1B588216713072009F5590 /* RestKitResources.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RestKitResources.bundle;
+			remoteRef = EF1B588116713072009F5590 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF1B584116712FE8009F5590 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF1B585216712FE8009F5590 /* InfoPlist.strings in Resources */,
+				EF1B585A16712FE8009F5590 /* Default.png in Resources */,
+				EF1B585C16712FE8009F5590 /* Default@2x.png in Resources */,
+				EF1B585E16712FE8009F5590 /* Default-568h@2x.png in Resources */,
+				EF1B586116712FE8009F5590 /* MainStoryboard.storyboard in Resources */,
+				EF56D1191671B2A1004CBDB6 /* buttonOrange.png in Resources */,
+				EF56D11A1671B2A1004CBDB6 /* buttonOrange@2x.png in Resources */,
+				EF56D11B1671B2A1004CBDB6 /* login_background@2x.png in Resources */,
+				EF56D11D1671B36F004CBDB6 /* button_login_no_shadow@2x.png in Resources */,
+				EF56D1211671B8D3004CBDB6 /* logo.png in Resources */,
+				EF56D1231671B90A004CBDB6 /* logo2.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF1B583F16712FE8009F5590 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF56D1141671B13F004CBDB6 /* FGalleryPhoto.m in Sources */,
+				EF56D1131671B13A004CBDB6 /* FGalleryPhotoView.m in Sources */,
+				EF1B585416712FE8009F5590 /* main.m in Sources */,
+				EF1B585816712FE8009F5590 /* AppDelegate.m in Sources */,
+				EF1B586416712FE8009F5590 /* ViewController.m in Sources */,
+				EF1B58971671336D009F5590 /* ActionsTableViewController.m in Sources */,
+				EF1B58D716713DAE009F5590 /* DataViewController.m in Sources */,
+				EF1B58D816713DAE009F5590 /* ModelController.m in Sources */,
+				EF1B58D916713DAE009F5590 /* RootViewController.m in Sources */,
+				EF1204A216714C8B00609CEF /* TripDetail.m in Sources */,
+				EF1204B216715B6700609CEF /* Trip.m in Sources */,
+				EF1204B61671675700609CEF /* MBProgressHUD.m in Sources */,
+				EF1204C91671852500609CEF /* MyLocation.m in Sources */,
+				EF56D0F21671AD2C004CBDB6 /* AFHTTPClient.m in Sources */,
+				EF56D0F31671AD2C004CBDB6 /* AFHTTPRequestOperation.m in Sources */,
+				EF56D0F41671AD2C004CBDB6 /* AFImageRequestOperation.m in Sources */,
+				EF56D0F51671AD2C004CBDB6 /* AFJSONRequestOperation.m in Sources */,
+				EF56D0F61671AD2C004CBDB6 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				EF56D0F71671AD2C004CBDB6 /* AFPropertyListRequestOperation.m in Sources */,
+				EF56D0F81671AD2C004CBDB6 /* AFURLConnectionOperation.m in Sources */,
+				EF56D0F91671AD2C004CBDB6 /* AFXMLRequestOperation.m in Sources */,
+				EF56D0FA1671AD2C004CBDB6 /* UIImageView+AFNetworking.m in Sources */,
+				EF56D10E1671AEBB004CBDB6 /* FGalleryViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EF1B5885167130AF009F5590 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RestKit;
+			targetProxy = EF1B5884167130AF009F5590 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EF1B585016712FE8009F5590 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF1B585116712FE8009F5590 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EF1B585F16712FE8009F5590 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF1B586016712FE8009F5590 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF1B586516712FE8009F5590 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EF1B586616712FE8009F5590 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF1B586816712FE8009F5590 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Insomniie/Insomniie-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(BUILT_PRODUCTS_DIR)/../../Headers\"";
+				INFOPLIST_FILE = "Insomniie/Insomniie-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EF1B586916712FE8009F5590 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Insomniie/Insomniie-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(BUILT_PRODUCTS_DIR)/../../Headers\"";
+				INFOPLIST_FILE = "Insomniie/Insomniie-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF1B583D16712FE8009F5590 /* Build configuration list for PBXProject "Insomniie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF1B586516712FE8009F5590 /* Debug */,
+				EF1B586616712FE8009F5590 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF1B586716712FE8009F5590 /* Build configuration list for PBXNativeTarget "Insomniie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF1B586816712FE8009F5590 /* Debug */,
+				EF1B586916712FE8009F5590 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF1B583A16712FE8009F5590 /* Project object */;
+}
